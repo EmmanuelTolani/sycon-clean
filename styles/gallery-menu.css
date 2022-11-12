@@ -1,0 +1,11 @@
+.gallery-menu{
+
+}
+.gallery-menu .container{
+    height: 814.89px;
+}
+
+.gallery-menu .gallery-menu__photos{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}

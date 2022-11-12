@@ -1,0 +1,139 @@
+.info{
+    background: #173C6D;
+}
+.info .container{
+       height: 687px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info .info__left{
+    width: 505px;
+    height: 228px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info .info__left h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 144.02%;
+    color: #FFFFFF;
+    text-align: left;
+}
+.info .info__left p{
+    width: 465px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 144.02%;
+color: rgba(255, 255, 255, 0.7);
+text-align: left;
+}
+.info .info__btn {
+     padding: 15px 35px;
+        background: #F1A332;
+        border-radius: 10px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+}
+.info .info__btn a:hover{
+    color: white;
+}
+.info .info__right{
+    position: relative;
+}
+.info .info__right img{
+    width: 649.2px;
+    height: 556.71px;
+}
+.info .info__right .info__canada-leaf{
+    position: absolute;
+    top: 0; 
+    right: 0;
+}
+.info .info__right .info__canada-leaf img{
+    width: 118px;
+    height: 130px;
+}
+/* Info 2 */
+.info2{
+    padding: 100px;
+}
+.info2 .container{
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.info2 .info2__left{
+    width: 524px;
+    height: 634px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.info2 .info2__left img {
+    width: 524px;
+    height: 634px;
+}
+.info2 .info2__left .info__tag{
+    position: absolute;
+     top: 30%;
+    right: -40px;
+}
+.info2 .info2__left .info__tag img{
+    width: 230px;
+    height: 53px;
+}
+.info2 .info2__left .info__rating-tag{
+    position: absolute;
+    top: 45%;
+    left: -90px;
+}
+.info2 .info2__left .info__rating-tag img{
+    width: 230px;
+    height: 53px;
+}
+.info2 .info2__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 460px;
+    height: 295px;
+}
+.info2 .info2__right h1{
+   font-weight: 700;
+font-size: 40px;
+line-height: 144.02%;
+color: #173C6D;
+width: 460px;
+height: 116px;
+}
+.info2 .info2__right p{
+   font-weight: 400;
+font-size: 16px;
+line-height: 144.02%;
+width: 460px;
+height: 69px;
+color: rgba(0, 0, 0, 0.7);
+
+}
+.info2 .info2__btn a{
+        padding: 15px 35px;
+        background: #F1A332;
+        border-radius: 10px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+}
+.info2 .info2__btn a:hover{
+    color: white;
+}
