@@ -10,6 +10,11 @@ const GalleryMenu = () => {
             Get professional cleaning experience from our cleaners anywhere in
             Alberta!
           </p>
+          <div className="book-btn">
+            <Link href="/" alt="book now">
+              Book Now
+            </Link>
+          </div>
         </div>
         <div className="gallery-menu__photos">
           <div className="gallery-menu__photo">

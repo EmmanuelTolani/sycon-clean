@@ -1,0 +1,87 @@
+.contact{
+    padding: 100px;
+    background: rgba(241, 163, 50, 0.1);
+}
+.contact .container{
+    display: flex;
+    height: 685px;
+    justify-content: center;
+}
+.contact .container .contact__info{
+
+}
+.contact .container .contact__info h1{
+    font-weight: 700;
+font-size: 40px;
+line-height: 144.02%;
+/* or 58px */
+width: 521px;
+height: 116px;
+color: #173C6D;
+}
+.contact .container .contact__info .contact__contacts{
+    display: grid;
+    grid-template-columns: repeat(2,223px);
+    gap: 50px;
+    padding: 30px;
+}
+.contact .container .contact__info .contact__contact{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+width: 223px;
+position: relative;
+}
+.contact .container .contact__info .contact__contact img{
+    position: absolute;
+    left: -30px;
+    height: 22.5px;
+    width: 17.5px;
+    object-fit: contain;
+}
+.contact .container .contact__info .contact__contact h2{
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+}
+.contact .container .contact__info .contact__contact p{
+    font-weight: 500;
+font-size: 14px;
+line-height: 170.02%;
+/* or 24px */
+color: rgba(0, 0, 0, 0.7);
+
+}
+.contact .container .contact__qoute{
+    background: white;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 44px;
+width: 426px;
+height: 585px;
+padding: 50px;
+}
+.contact .container .contact__qoute h2{
+    width: 169px;
+height: 43px;
+font-weight: 600;
+font-size: 30px;
+line-height: 144.02%;
+color: #000000;
+
+}
+.contact .container .contact__qoute form{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 426px;
+height: 404px;
+}

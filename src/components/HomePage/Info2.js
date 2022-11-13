@@ -19,7 +19,7 @@ const Info2 = () => {
             Don’t just take our word for it, we offer the best cleaning services
             of all kinds at a very affordable rate so what are you waiying for?
           </p>
-          <div className="info2__btn">
+          <div className="book-btn">
             <Link href="/" alt="book now">
               Book Now
             </Link>

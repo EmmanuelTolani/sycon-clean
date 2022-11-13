@@ -9,6 +9,8 @@ import Offer from "../src/components/HomePage/Offer";
 import Info from "../src/components/HomePage/Info";
 import Info2 from "../src/components/HomePage/Info2";
 import GalleryMenu from "../src/components/HomePage/GalleryMenu";
+import Testimonials from "../src/components/HomePage/Testimonials";
+import Contact from "../src/components/HomePage/Contact";
 export default function Home() {
   return (
     <div>
@@ -25,7 +27,8 @@ export default function Home() {
       <Info />
       <Info2 />
       <GalleryMenu />
-      <div className="empty-box"></div>
+      <Testimonials />
+      <Contact />
       <Footer />
     </div>
   );

@@ -1,0 +1,67 @@
+.team{
+    background: rgba(23, 60, 109, 0.02);
+    padding: 100px;
+}
+.team .container{
+    height: 666px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+}
+.team .team__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.team .team__info h1{
+ width: 660px;
+height: 48px;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+color: #173C6D;
+}
+.team .team__info p{
+width: 642px;
+height: 46px;
+font-weight: 400;
+font-size: 16px;
+line-height: 144.02%;
+/* or 23px */
+text-align: center;
+color: rgba(0, 0, 0, 0.7);
+}
+.team .team__people{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    gap: 50px;
+}
+.team .team__people .team__person{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    width: 227px;
+    height: 221px;
+}
+.team .team__people .team__person .team__person-info h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 144.02%;
+    text-align: center;
+    color: #173C6D;
+}
+.team .team__people .team__person .team__person-info p{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 144.02%;
+text-align: center;
+color: #000000;
+}

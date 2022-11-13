@@ -10,7 +10,7 @@ const Hero = () => {
             We take cleaning to the next level. By providing different varieties
             of cleaning services suitable for everyone.
           </p>
-          <div className="hero__btn">
+          <div className="book-btn">
             <Link href="/" alt="book now">
               Book Now
             </Link>

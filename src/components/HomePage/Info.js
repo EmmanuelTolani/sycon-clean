@@ -12,7 +12,7 @@ const Info = () => {
             areas around Canada and we clean numerous houses, equipments,
             offices and so on each year.
           </p>
-          <div className="info__btn">
+          <div className="book-btn">
             <Link href="/" alt="book now">
               Book Now
             </Link>
