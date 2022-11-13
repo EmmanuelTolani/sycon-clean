@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner />
-      <Header />
+      <Header sticky={true} />
       {/* <MobileMenu /> */}
       <Hero />
       <Offer />
