@@ -12,6 +12,8 @@
 @import "./aboutPage/about.css";
 @import "./aboutPage/about-video.css";
 @import "./aboutPage/about-team.css";
+@import "./servicePage/service-hero.css";
+@import "./servicePage/service-services.css";
 html,
 body {
   padding: 0;

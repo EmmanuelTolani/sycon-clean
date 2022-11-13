@@ -35,7 +35,7 @@ const Header = ({ sticky }) => {
               </Link>
             </li>
             <li>
-              <Link href="/" alt="test">
+              <Link href="/services" alt="test">
                 Services
               </Link>
             </li>
