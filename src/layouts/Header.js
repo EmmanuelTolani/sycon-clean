@@ -30,12 +30,12 @@ const Header = ({ sticky }) => {
               </Link>
             </li>
             <li>
-              <Link href="/" alt="about">
+              <Link href="/about" alt="about">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/test" alt="test">
+              <Link href="/" alt="test">
                 Services
               </Link>
             </li>
