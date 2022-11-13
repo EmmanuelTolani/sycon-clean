@@ -1,7 +1,7 @@
 .header {
     z-index: 10;
     padding: 0 100px;
-    background: transparent;
+    background: white;
     position: relative;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
