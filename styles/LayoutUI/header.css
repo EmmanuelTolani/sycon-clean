@@ -58,7 +58,7 @@
                 transition: all 0.3s ease-in-out;
                 font-size: 18px;
                 line-height: 21.78px;
-                font-weight: 400;
+                font-weight: 500;
     }
     .header .header__anchor-nav li a:hover{
         color:#F1A332;
@@ -75,3 +75,14 @@
     .header .header__anchor-nav .header-btn a:hover{
         color: white;
     }
+
+@media only screen and (max-width: 1040px) {
+    .header {
+        display: none;
+
+    }
+
+    .header-alt {
+        display: none;
+    }
+}

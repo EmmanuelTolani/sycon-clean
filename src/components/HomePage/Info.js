@@ -19,9 +19,9 @@ const Info = () => {
           </div>
         </div>
         <div className="info__right">
-          <img src="../img/icons/canada-map.png"></img>
+          <img src="../img/icons/canada-map.png" alt="canadian map"></img>
           <div className="info__canada-leaf">
-            <img src="../img/icons/canada-flag.png"></img>
+            <img src="../img/icons/canada-flag.png" alt="canadian flag"></img>
           </div>
         </div>
       </div>

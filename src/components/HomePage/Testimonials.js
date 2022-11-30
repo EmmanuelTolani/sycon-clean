@@ -13,7 +13,7 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="testimonials__reviews">
-          <div class="testimonials__review">
+          <div className="testimonials__review">
             <p>
               “Sycon is simply the best out there. I came back from my travels
               and was so tired to clean my house as there were several rooms but
@@ -21,11 +21,11 @@ const Testimonials = () => {
               within a couple of hours.”
             </p>
             <div className="testimonials__review-customer">
-              <img src="../img/customer-img.png" alt="" />
+              <img src="../img/customer-img.png" alt="customer review" />
               <span>Lisa Ann</span>
             </div>
           </div>
-          <div class="testimonials__review">
+          <div className="testimonials__review">
             <p>
               “Sycon is simply the best out there. I came back from my travels
               and was so tired to clean my house as there were several rooms but
@@ -33,11 +33,11 @@ const Testimonials = () => {
               within a couple of hours.”
             </p>
             <div className="testimonials__review-customer">
-              <img src="../img/customer-img.png" alt="" />
+              <img src="../img/customer-img.png" alt="customer review" />
               <span>Lisa Ann</span>
             </div>
           </div>
-          <div class="testimonials__review">
+          <div className="testimonials__review">
             <p>
               “Sycon is simply the best out there. I came back from my travels
               and was so tired to clean my house as there were several rooms but
@@ -45,7 +45,7 @@ const Testimonials = () => {
               within a couple of hours.”
             </p>
             <div className="testimonials__review-customer">
-              <img src="../img/customer-img.png" alt="" />
+              <img src="../img/customer-img.png" alt="customer review" />
               <span>Lisa Ann</span>
             </div>
           </div>

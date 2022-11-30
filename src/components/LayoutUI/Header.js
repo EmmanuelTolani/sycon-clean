@@ -19,7 +19,7 @@ const Header = ({ sticky }) => {
       <div className="container">
         <div className="header__logo">
           <Link href="/">
-            <img src="../img/sycon-logo.png" />
+            <img src="../img/sycon-logo.png" alt="sycon logo" />
           </Link>
         </div>
         <div className="header__menu">

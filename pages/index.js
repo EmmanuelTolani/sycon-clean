@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import Header from "../src/layouts/Header";
-import Banner from "../src/layouts/Banner";
-import MobileMenu from "../src/layouts/MobileMenu";
-import Footer from "../src/layouts/Footer";
+import Header from "../src/components/LayoutUI/Header";
+import Banner from "../src/components/LayoutUI/Banner";
+import MobileMenu from "../src/components/LayoutUI/MobileMenu";
+import Footer from "../src/components/LayoutUI/Footer";
 import Hero from "../src/components/HomePage/Hero";
 import Offer from "../src/components/HomePage/Offer";
 import Info from "../src/components/HomePage/Info";
@@ -20,8 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner />
-      <Header sticky={true} />
-      {/* <MobileMenu /> */}
+      <MobileMenu sticky={true} />
+      <Header />
       <Hero />
       <Offer />
       <Info />

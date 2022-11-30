@@ -1,32 +1,27 @@
 .about{
     background: #F9F9F9;
-    padding: 100px;
+    padding: 100px 15px;
 }
 .about .container{
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-evenly;
 align-items: flex-start;
-gap: 150px;
-height: 565px;
+gap: 35px;
 }
 .about .container .about__right{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-gap: 30px;
-width: 613px;
-height: 390px;
+gap: 25px;
+/* height: 390px; */
 }
 .about .container .about__right h1{
-    width: 329px;
-height: 48px;
 font-weight: 700;
-font-size: 40px;
+font-size: clamp(1.875rem, 1.289rem + 1.563vw, 2.5rem);
 line-height: 48px;
 color: #173C6D;
-
 }
 .about .container .about__right .about__founder-info{
     display: flex;
@@ -34,13 +29,8 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 5px;
-width: 244px;
-height: 69px;
-
 }
 .about .container .about__right .about__founder-info h2{
-    width: 197px;
-height: 36px;
 font-weight: 600;
 font-size: 24px;
 line-height: 140.02%;
@@ -49,8 +39,6 @@ align-items: center;
 color: #173C6D;
 }
 .about .container .about__right .about__founder-info p{
- width: 250px;
-height: 28px;
 font-weight: 400;
 font-size: 20px;
 line-height: 140.02%;
@@ -62,14 +50,44 @@ color: #000000;
     gap: 30px;
 }
 .about .container .about__right .about__founder-story p{
-    width: 613px;
-height: 104px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
 line-height: 144.02%;
 /* or 26px */
 color: rgba(0, 0, 0, 0.7);
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   .about .container{
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .about .container{
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

@@ -5,31 +5,56 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__logo">
-          <img src="../img/sycon-logo.png" />
+          <img src="../img/sycon-logo.png" alt="sycon logo" />
         </div>
         <ul className="footer__socials">
           <li>
-            <Link href="#" alt="instagram">
+            <Link
+              href="https://www.instagram.com/"
+              alt="instagram"
+              aria-label="Instagram"
+              target={"_blank"}
+            >
               <i className="fa-brands fa-instagram"></i>
             </Link>
           </li>
           <li>
-            <Link href="#" alt="twitter">
+            <Link
+              href="https://www.twitter.com/"
+              alt="twitter"
+              aria-label="Twitter"
+              target={"_blank"}
+            >
               <i className="fa-brands fa-twitter"></i>
             </Link>
           </li>
           <li>
-            <Link href="#" alt="youtube">
+            <Link
+              href="https://www.youtube.com/"
+              alt="youtube"
+              aria-label="Youtube"
+              target={"_blank"}
+            >
               <i className="fa-brands fa-youtube"></i>
             </Link>
           </li>
           <li>
-            <Link href="#" alt="linkedin">
+            <Link
+              href="https://www.linkedin.com/"
+              alt="linkedin"
+              aria-label="Linkedin"
+              target={"_blank"}
+            >
               <i className="fa-brands fa-linkedin-in"></i>
             </Link>
           </li>
           <li>
-            <Link href="#" alt="facebook">
+            <Link
+              href="https://www.facebook.com/"
+              alt="facebook"
+              aria-label="Facebook"
+              target={"_blank"}
+            >
               <i className="fa-brands fa-facebook-f"></i>
             </Link>
           </li>

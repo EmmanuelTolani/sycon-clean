@@ -1,5 +1,5 @@
 .about-video{
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 .about-video .container{
     display: flex;
@@ -8,15 +8,13 @@
     gap: 50px;
 }
 .about-video .container h1{
-    width: 725px;
-    height: 48px;
     font-weight: 700;
-    font-size: 40px;
+    font-size: clamp(1.875rem, 1.289rem + 1.563vw, 2.5rem);
     line-height: 48px;
     text-align: left;
     color: #173C6D;
 }
 .about-video .container .about-video__video iframe{
-    height: 666px;
+    height: clamp(300px,60vw,666px);
     width: 100%;
 }

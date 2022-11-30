@@ -1,13 +1,15 @@
 @import "reset.css";
-@import "header.css";
-@import "banner.css";
-@import "footer.css";
-@import "hero.css";
-@import "offer.css";
-@import "info.css";
-@import "gallery-menu.css";
+@import "./LayoutUI/header.css";
+@import "./LayoutUI/banner.css";
+@import "./LayoutUI/mobile-menu.css";
+@import "./LayoutUI/footer.css";
+@import "./homePage/hero.css";
+@import "plugins.css";
+@import "./homePage/offer.css";
+@import "./homePage/info.css";
+@import "./homePage/gallery-menu.css";
 @import "testimonials.css";
-@import "contact.css";
+@import "./homePage/contact.css";
 @import "./aboutPage/about-hero.css";
 @import "./aboutPage/about.css";
 @import "./aboutPage/about-video.css";
@@ -36,8 +38,9 @@ a {
   --font-family: 'Inter', sans-serif;
 }
 .container{
-  max-width: 1240px;
+  max-width: 1366px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 body {

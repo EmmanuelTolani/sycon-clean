@@ -5,12 +5,22 @@ const Info2 = () => {
     <div className="info2">
       <div className="container">
         <div className="info2__left">
-          <img src="../img/cleaning-women.png"></img>
+          <img
+            src="../img/cleaning-women.png"
+            alt="woman cleaning window"
+          ></img>
           <div className="info__rating-tag">
-            <img src="../img/icons/ratings-tag.png"></img>
+            <img
+              src="../img/icons/ratings-tag.png"
+              alt="sycon customer ratings"
+            ></img>
           </div>
           <div className="info__tag">
-            <img src="../img/icons/tag.png"></img>
+            <img
+              src="../img/icons/tag.png"
+              alt="c
+            sycon customer review"
+            ></img>
           </div>
         </div>
         <div className="info2__right">

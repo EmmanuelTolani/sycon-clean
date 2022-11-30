@@ -13,14 +13,14 @@ const Offer = () => {
         <div className="offers__offers">
           <div className="offers__offer">
             <div className="offers__offer-icon">
-              <img src="../img/icons/home.png" />
+              <img src="../img/icons/home.png" alt="home cleaning" />
             </div>
             <h2>Home Cleaning</h2>
             <p>Let our team of experts handle the cleaning of your home.</p>
           </div>
           <div className="offers__offer">
             <div className="offers__offer-icon">
-              <img src="../img/icons/office.png" />
+              <img src="../img/icons/office.png" alt="office cleaning" />
             </div>
             <h2>Office Cleaning</h2>
             <p>
@@ -29,7 +29,7 @@ const Offer = () => {
           </div>
           <div className="offers__offer">
             <div className="offers__offer-icon">
-              <img src="../img/icons/organize.png" />
+              <img src="../img/icons/organize.png" alt="interior cleaning" />
             </div>
             <h2>Interior Cleaning</h2>
             <p>
@@ -39,7 +39,7 @@ const Offer = () => {
           </div>
           <div className="offers__offer">
             <div className="offers__offer-icon">
-              <img src="../img/icons/sweep.png" />
+              <img src="../img/icons/sweep.png" alt="exterior cleaning" />
             </div>
             <h2>Exterior Cleaning</h2>
             <p>

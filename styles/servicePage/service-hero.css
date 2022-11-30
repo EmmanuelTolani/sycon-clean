@@ -1,13 +1,12 @@
 .service-hero{
     background: rgba(23, 60, 109, 0.05);
-    padding: 100px;
+    padding: 100px 15px;
 }
 .service-hero .container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 477px;
-    gap: 30px;
 }
 .service-hero .container .service-hero__info{
     display: flex;
@@ -15,24 +14,30 @@
     align-items: center;
     padding: 0px;
     gap: 15px;
-    width: 729px;
-    height: 261px;
 }
 .service-hero .container .service-hero__info h1{
-    width: 634px;
-height: 146px;
+max-width: 634px;
+font-size: clamp(2.813rem, 1.934rem + 2.344vw, 3.75rem);
 font-weight: 700;
-font-size: 60px;
 line-height: 73px;
 text-align: center;
 color: #173C6D;
 }
 .service-hero .container .service-hero__info p{
-    width: 729px;
-height: 100px;
+max-width: 729px;
+font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
 font-weight: 400;
-font-size: 18px;
 line-height: 190.52%;
 text-align: center;
 color: #173C6D;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   .service-hero .container .service-hero__info h1{
+    width: 100%;
+   }
+   .service-hero .container .service-hero__info p{
+    width: 100%;
+   }
 }

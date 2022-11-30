@@ -13,56 +13,21 @@ const Team = () => {
         </div>
         <div className="team__people">
           <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
+            <img src="../img/people/team.png" alt="team member" />
             <div className="team__person-info">
               <h2>Adam Smith</h2>
               <p>Co-founder</p>
             </div>
           </div>
           <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
+            <img src="../img/people/team.png" alt="team member" />
             <div className="team__person-info">
               <h2>Adam Smith</h2>
               <p>Co-founder</p>
             </div>
           </div>
           <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="" />
+            <img src="../img/people/team.png" alt="team member" />
             <div className="team__person-info">
               <h2>Adam Smith</h2>
               <p>Co-founder</p>

@@ -12,7 +12,10 @@ const Hero = () => {
           </p>
         </div>
         <div className="about-hero__right">
-          <img src="../img/about-hero.png"></img>
+          <img
+            src="../img/about-hero.png"
+            alt="person holding cleaning supplies"
+          ></img>
         </div>
       </div>
     </div>
