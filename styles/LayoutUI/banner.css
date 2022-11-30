@@ -9,7 +9,7 @@
 .banner .container a{
    color: white;
    font-weight: 600;
-   font-size: 20px;
+  font-size: clamp(1rem, 0.766rem + 0.625vw, 1.25rem);
    line-height: 28.8px;
 }
 .banner .container a:hover{

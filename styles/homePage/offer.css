@@ -75,7 +75,9 @@ color: rgba(0, 0, 0, 0.7);
 @media only screen and (max-width: 768px) {
       .offers .offers__offers{
     flex-direction: column;
-    gap: 20px;
+   }
+   .offers .offers__offer{
+    margin-bottom: 40px;
    }
 }
 
