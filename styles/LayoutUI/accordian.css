@@ -1,0 +1,24 @@
+.accordion-item{
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.accordion-item .accordion-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #173C6D;
+    text-transform: capitalize;
+}
+.accordion-item .accordion-content{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
+    line-height: 144.02%;
+}

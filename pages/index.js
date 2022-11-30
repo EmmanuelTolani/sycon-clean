@@ -8,6 +8,7 @@ import Hero from "../src/components/HomePage/Hero";
 import Offer from "../src/components/HomePage/Offer";
 import Info from "../src/components/HomePage/Info";
 import Info2 from "../src/components/HomePage/Info2";
+import Faq from "../src/components/HomePage/FAQ";
 import GalleryMenu from "../src/components/HomePage/GalleryMenu";
 import Testimonials from "../src/components/HomePage/Testimonials";
 import Contact from "../src/components/HomePage/Contact";
@@ -26,6 +27,7 @@ export default function Home() {
       <Offer />
       <Info />
       <Info2 />
+      <Faq />
       <GalleryMenu />
       <Testimonials />
       <Contact />

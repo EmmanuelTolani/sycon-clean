@@ -4,23 +4,21 @@
 }
 .contact .container{
     display: flex;
-    height: 685px;
     justify-content: center;
+    align-items: flex-start;
 }
 .contact .container .contact__info{
 
 }
 .contact .container .contact__info h1{
     font-weight: 700;
-font-size: 40px;
+font-size: clamp(1.875rem, 1.289rem + 1.563vw, 2.5rem);
 line-height: 144.02%;
 /* or 58px */
-width: 521px;
-height: 116px;
 color: #173C6D;
 }
 .contact .container .contact__info .contact__contacts{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,223px);
     gap: 50px;
     padding: 30px;

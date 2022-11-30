@@ -2,11 +2,13 @@
 @import "./LayoutUI/header.css";
 @import "./LayoutUI/banner.css";
 @import "./LayoutUI/mobile-menu.css";
+@import "./LayoutUI/accordian.css";
 @import "./LayoutUI/footer.css";
 @import "./homePage/hero.css";
 @import "plugins.css";
 @import "./homePage/offer.css";
 @import "./homePage/info.css";
+@import "./homePage/faq.css";
 @import "./homePage/gallery-menu.css";
 @import "testimonials.css";
 @import "./homePage/contact.css";

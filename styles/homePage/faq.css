@@ -1,0 +1,12 @@
+.faq{
+    background: #F9F9F9;
+    padding: 100px 15px;
+}
+.faq h1{
+    font-weight: 700;
+    font-size: clamp(1.875rem, 1.289rem + 1.563vw, 2.5rem);
+    line-height: 144.02%;
+    color: #173C6D;
+    text-align: center;
+    margin-bottom: 50px;
+}
