@@ -27,7 +27,7 @@ const Info2 = () => {
           <h1>We are the best In the cleaning business.</h1>
           <p>
             Don’t just take our word for it, we offer the best cleaning services
-            of all kinds at a very affordable rate so what are you waiying for?
+            of all kinds at a very affordable rate so what are you waiting for?
           </p>
           <div className="book-btn">
             <Link href="/book-now" alt="book now">

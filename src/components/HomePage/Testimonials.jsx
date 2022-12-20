@@ -44,10 +44,10 @@ const Testimonials = () => {
           </div>
           <div className="testimonials__review">
             <p>
-              “SYCON has exceeded my expectations! Their team is professional,
+              SYCON has exceeded my expectations! Their team is professional,
               reliable, and truly cares about delivering top-notch service. My
               home has never looked cleaner. I highly recommend Sycon Clean for
-              anyone seeking exceptional cleaning services.”
+              anyone seeking exceptional cleaning services.
             </p>
             <div className="testimonials__review-customer">
               <img
