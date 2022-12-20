@@ -17,9 +17,12 @@
 }
 .service-hero .container .service-hero__info h1{
 max-width: 634px;
-font-size: clamp(2.813rem, 1.934rem + 2.344vw, 3.75rem);
-font-weight: 700;
-line-height: 73px;
+ font-size: 1.875rem;
+font-size: clamp(1.875rem, 1.2147887323943662rem + 2.112676056338028vw, 3.75rem);
+    font-weight: 700;
+    line-height: clamp(2.1875rem, 1.3598151408450705rem + 2.648591549295775vw, 4.538125rem);
+    text-align: center;
+    color: white;
 text-align: center;
 color: #173C6D;
 }
