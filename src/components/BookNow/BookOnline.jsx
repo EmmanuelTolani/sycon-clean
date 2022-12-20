@@ -28,11 +28,50 @@ const validate = (values) => {
   }
   if (!values.serviceType) {
     errors.serviceType = "Required";
-  } else if (values.serviceType === "") {
+  } else if (values.serviceType.value === "") {
     errors.serviceType = "Select a valid service type";
   }
+  if (!values.bedrooms) {
+    errors.bedrooms = "Required";
+  } else if (values.bedrooms === "") {
+    errors.bedrooms = "Select the amount of bedrooms you have";
+  }
+  if (!values.bathrooms) {
+    errors.bathrooms = "Required";
+  } else if (values.bathrooms === "") {
+    errors.bathrooms = "Select the amount of bathrooms you have";
+  }
+  if (!values.kitchens) {
+    errors.kitchens = "Required";
+  } else if (values.kitchens === "") {
+    errors.kitchens = "Select the amount of kitchens you have";
+  }
+  if (!values.dirtiness) {
+    errors.dirtiness = "Required";
+  } else if (values.dirtiness === "") {
+    errors.dirtiness = "Select the dirtiness level";
+  }
 
-  return errors;
+  if (!values.address) {
+    errors.address = "Required";
+  } else if (values.address === "") {
+    errors.address = "Enter your address";
+  }
+  if (!values.city) {
+    errors.city = "Required";
+  } else if (values.city === "") {
+    errors.city = "Enter your city";
+  }
+  if (!values.state) {
+    errors.state = "Required";
+  } else if (values.state === "") {
+    errors.state = "Enter your province";
+  }
+  if (!values.postalCode) {
+    errors.postalCode = "Required";
+  } else if (!/^(?:[A-Z]\d[A-Z][ -]?\d[A-Z]\d)$/i.test(values.postalCode)) {
+    errors.postalCode = "Invalid postal code";
+  }
 };
 
 const BookOnline = () => {
@@ -53,7 +92,7 @@ const BookOnline = () => {
       state: "",
       postalCode: "",
       specialInstructions: "",
-      apartment: "",
+      apartmentNO: "",
       discount: "",
     },
     validate,
@@ -68,7 +107,7 @@ const BookOnline = () => {
           <h2>Complete your booking</h2>
           <p>Fill the information below to finalise your booking.</p>
         </div>
-
+        {/* Start User Name, Last Name, Email Address, Phone Number */}
         <div className="bookingform-group">
           <h2>Who are you?</h2>
           <p>
@@ -143,6 +182,8 @@ const BookOnline = () => {
             </div>
           </FormElement>
         </div>
+        {/*End User Name, Last Name, Email Address, Phone Number */}
+        {/*Start select Service Type */}
         <div className="bookingform-group">
           <FormElement>
             <div className="fullwidth">
@@ -166,6 +207,8 @@ const BookOnline = () => {
             </div>
           </FormElement>
         </div>
+        {/* End select Service Type*/}
+        {/* Start Home Specifications for cleaning */}
         <div className="bookingform-group">
           <h2>Tell us about your home</h2>
           <FormElement>
@@ -179,6 +222,7 @@ const BookOnline = () => {
                 value={formik.values.bedrooms}
                 onBlur={formik.handleBlur}
               >
+                <option value={""}>Please select an option</option>
                 <option value={1}>1 Bedroom</option>
                 <option value={2}>2 Bedroom</option>
                 <option value={3}>3 Bedroom</option>
@@ -200,6 +244,7 @@ const BookOnline = () => {
                 value={formik.values.bathrooms}
                 onBlur={formik.handleBlur}
               >
+                <option value={""}>Please select an option</option>
                 <option value={1}>1 Bathroom</option>
                 <option value={2}>2 Bathroom</option>
                 <option value={3}>3 Bathroom</option>
@@ -223,6 +268,7 @@ const BookOnline = () => {
                 value={formik.values.kitchens}
                 onBlur={formik.handleBlur}
               >
+                <option value={""}>Please select an option</option>
                 <option value={1}>1 Kitchen</option>
                 <option value={2}>2 Kitchen</option>
                 <option value={3}>3 Kitchen</option>
@@ -241,6 +287,7 @@ const BookOnline = () => {
                 value={formik.values.dirtiness}
                 onBlur={formik.handleBlur}
               >
+                <option value={""}>Please select an option</option>
                 <option value={"slightly-dirty"}>Slightly Dirty</option>
                 <option value={"pretty-dirty"}>Pretty Dirty</option>
                 <option value={"very-dirty"}>Very Dirty</option>
@@ -251,6 +298,8 @@ const BookOnline = () => {
             </div>
           </FormElement>
         </div>
+        {/* End of Home Specifications for cleaning */}
+        {/* Start of Home Extras */}
         <div className="bookingform-group">
           <FormElement>
             <div className="frameDiv34">
@@ -327,6 +376,8 @@ const BookOnline = () => {
             </div>
           </FormElement>
         </div>
+        {/* End of Home Extras */}
+        {/* Start of Book Service Date */}
         <div className="bookingform-group">
           <h2>When would you like to come?</h2>
           <p>
@@ -356,6 +407,8 @@ const BookOnline = () => {
             <button className="frameInput2">Monthly</button>
           </FormElement>
         </div>
+        {/* End of Book Service Date */}
+        {/* Start of Home Address*/}
         <div className="bookingform-group">
           <h2>What is your home address</h2>
           <p>Where would you like us to clean?</p>
@@ -375,7 +428,7 @@ const BookOnline = () => {
             </div>
           </FormElement>
           <FormElement>
-            <div>
+            <div className="halfwidth">
               <label htmlFor="city">City</label>
               <input
                 name="city"
@@ -388,7 +441,7 @@ const BookOnline = () => {
                 onBlur={formik.handleBlur}
               />
             </div>
-            <div>
+            <div className="halfwidth">
               <label htmlFor="state">State</label>
               <input
                 name="state"
@@ -403,7 +456,7 @@ const BookOnline = () => {
             </div>
           </FormElement>
           <FormElement>
-            <div>
+            <div className="halfwidth">
               <label htmlFor="postalCode">Postal Code</label>
               <input
                 name="postalCode"
@@ -415,8 +468,11 @@ const BookOnline = () => {
                 value={formik.values.postalCode}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.postalCode && formik.errors.postalCode ? (
+                <div>{formik.errors.postalCode}</div>
+              ) : null}
             </div>
-            <div>
+            <div className="halfwidth">
               <label htmlFor="apartment">Apartment No</label>
               <input
                 name="apartment"
@@ -425,12 +481,14 @@ const BookOnline = () => {
                 placeholder="Apartment No"
                 className="frameInput1"
                 onChange={formik.handleChange}
-                value={formik.values.apartment}
+                value={formik.values.apartmentNO}
                 onBlur={formik.handleBlur}
               />
             </div>
           </FormElement>
         </div>
+        {/* End of Book Home Address */}
+        {/* Start of Special Instructions */}
         <div className="bookingform-group">
           <label htmlFor="special-instructions">Special Instruction</label>
           <p>
@@ -448,6 +506,8 @@ const BookOnline = () => {
             />
           </FormElement>
         </div>
+        {/* End of Special Instructions */}
+
         <div className="bookingform-group">
           <label htmlFor="discount">Discount Code</label>
           <FormElement>
@@ -510,7 +570,9 @@ const BookOnline = () => {
             </label>
           </FormElement>
         </div>
-        <button className="frameDiv98">Book Now</button>
+        <button className="frameDiv98" type="submit">
+          Book Now
+        </button>
       </div>
     </form>
   );
