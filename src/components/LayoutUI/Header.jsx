@@ -40,7 +40,7 @@ const Header = ({ sticky }) => {
               </Link>
             </li>
             <li className="header-btn">
-              <Link href="/" alt="book now">
+              <Link href="/book-now" alt="book now">
                 Book Now
               </Link>
             </li>

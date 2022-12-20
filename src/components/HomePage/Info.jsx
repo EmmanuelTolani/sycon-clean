@@ -7,13 +7,13 @@ const Info = () => {
         <div className="info__left">
           <h1>The backbone of cleaning services in Canada.</h1>
           <p>
-            Sycon makes cleaning as simple, effective, and exciting for our
+            SYCON makes cleaning as simple, effective, and exciting for our
             users. Our teams of professional cleaners are based in dozens of
             areas around Canada and we clean numerous houses, equipments,
             offices and so on each year.
           </p>
           <div className="book-btn">
-            <Link href="/" alt="book now">
+            <Link href="/book-now" alt="book now">
               Book Now
             </Link>
           </div>

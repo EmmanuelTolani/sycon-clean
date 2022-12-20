@@ -30,7 +30,7 @@ const Info2 = () => {
             of all kinds at a very affordable rate so what are you waiying for?
           </p>
           <div className="book-btn">
-            <Link href="/" alt="book now">
+            <Link href="/book-now" alt="book now">
               Book Now
             </Link>
           </div>

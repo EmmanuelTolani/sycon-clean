@@ -10,21 +10,21 @@ const About = () => {
         <div className="about__right">
           <h1>Founder Story</h1>
           <div className="about__founder-info">
-            <h2>Adam Smith</h2>
+            <h2>Prince Blessing Dunbar</h2>
             <p>Co-founder & CEO, Synco</p>
           </div>
           <div className="about__founder-story">
             <p>
-              Synco makes cleaning as simple, effective, and exciting for our
-              users. Our teams of professional cleaners are based in dozens of
-              areas around Canada and we clean numerous houses, equipments,
-              offices and so on each year.
+              At SYCON we believe cleaning should be a luxury every family can
+              afford. As such we go above and beyond in providing the highest
+              standard of cleaning at the best possible price. “Keeping your
+              home clean can be hard to manage, so we’ve got your back. Open 7
+              days a week allows us to aid with anyone’s unique schedule”.
             </p>
             <p>
-              Synco makes cleaning as simple, effective, and exciting for our
-              users. Our teams of professional cleaners are based in dozens of
-              areas around Canada and we clean numerous houses, equipments,
-              offices and so on each year.
+              {" "}
+              At SYCON we pride ourselves in providing the highest standard of
+              cleaning at the best possible price.
             </p>
           </div>
         </div>

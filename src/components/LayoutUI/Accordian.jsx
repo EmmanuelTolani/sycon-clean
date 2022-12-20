@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 
-const Accordion = ({ title, content }) => {
+const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="accordion-item">
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-        <div>{title}</div>
+        <div>{props.title}</div>
         <div>
           {isActive ? (
             <img
               src="../img/icons/angle-down-solid.svg"
+              alt="arrow down"
               style={{
                 height: "30px",
                 padding: "5px",
@@ -20,6 +21,7 @@ const Accordion = ({ title, content }) => {
           ) : (
             <img
               src="../img/icons/angle-up-solid.svg"
+              alt="arrow up"
               style={{
                 height: "30px",
                 padding: "5px",
@@ -29,7 +31,12 @@ const Accordion = ({ title, content }) => {
           )}
         </div>
       </div>
-      {isActive && <div className="accordion-content">{content}</div>}
+      {isActive && (
+        <div className="accordion-content">
+          {props.content}
+          {props.children}
+        </div>
+      )}
     </div>
   );
 };

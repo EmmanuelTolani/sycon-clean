@@ -18,6 +18,8 @@
 @import "./aboutPage/about-team.css";
 @import "./servicePage/service-hero.css";
 @import "./servicePage/service-services.css";
+@import "book-online.css";
+@import "./LayoutUI/forms.css";
 html,
 body {
   padding: 0;
@@ -42,7 +44,6 @@ a {
 .container{
   max-width: 1366px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 body {
@@ -71,4 +72,44 @@ body {
 }
 .book-btn  a:hover{
     color: white;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+
+  /* Colors */
+  --color-white: #fff;
+  --secondary-colour-synco: #173c6d;
+  --gray-1: #333;
+  --color-gray-300: #0c0c0c;
+  --color-gray-400: rgba(23, 60, 109, 0.5);
+  --color-gray-500: rgba(0, 0, 0, 0.7);
+  --color-gray-600: rgba(23, 60, 109, 0.3);
+  --color-black: #000;
+  --color-orange: #f1a332;
+
+  /* Gaps */
+  --gap-3xs: 5px;
+  --gap-2xs: 8px;
+  --gap-xs: 10px;
+  --gap-sm: 14px;
+  --gap-md: 15px;
+  --gap-lg: 16px;
+  --gap-xl: 20px;
+  --gap-2xl: 30px;
+
+  /* Paddings */
+  --padding-sm: 10px;
+  --padding-md: 20px;
+  --padding-lg: 50px;
+
+  /* border radiuses */
+  --br-md: 10px;
 }

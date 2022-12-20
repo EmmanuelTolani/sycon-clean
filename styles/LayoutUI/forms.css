@@ -1,0 +1,41 @@
+/* SignUp Form Start */
+.inquire-form{
+    padding: var(--padding-lg);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    max-width: 650px;
+}
+.inquire-form h2{
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.44;
+    font-weight: 600;
+    color: var(--secondary-colour-synco);
+}
+.inquire-form__field{
+    width: 100%;
+}
+.inquire-form__field label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.44;
+}
+.inquire-form input[type="text"]{
+    margin-top: 8px;
+    background: #F9F9F9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 50px;
+    font-size: 14px;
+    width: 100%;
+}
+.inquire-form select{
+ background: #F9F9F9;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+height: 50px;
+width: 100%;
+}

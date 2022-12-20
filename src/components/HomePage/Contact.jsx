@@ -1,5 +1,5 @@
 import React from "react";
-
+import SignupForm from "../Form/SignupForm";
 const Contact = () => {
   return (
     <div className="contact">
@@ -17,6 +17,8 @@ const Contact = () => {
               <h2>Mail Address</h2>
               <p>Synco@gmail.com Helpline@synco.com</p>
             </div>
+          </div>
+          <div className="contact__contacts">
             <div className="contact__contact">
               <img src="../img/icons/phone.png" alt="phone icon"></img>
               <h2>Phone No</h2>
@@ -30,38 +32,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact__qoute">
-          <h2>Get a qoute</h2>
-          <form>
-            <label htmlFor="firstname">First Name</label>
-            <input type="text" id="fname" aria-label="First Name"></input>
-            <label htmlFor="lastname">Last Name</label>
-            <input type="text" id="lastname" aria-label="Last Name"></input>
-            <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" aria-label="Email Address"></input>
-            <label htmlFor="phonenumber">Phone Number</label>
-            <input
-              type="text"
-              id="phonenumber"
-              aria-label="Phone Number"
-            ></input>
-            <label htmlFor="service">
-              Which of our services are you interested in
-            </label>
-            <select id="service">
-              <option value="" key="1">
-                Home Cleaning
-              </option>
-              <option value="" key="2">
-                Office Cleaning
-              </option>
-              <option value="" key="3">
-                Interior Cleaning
-              </option>
-              <option value="" key="4">
-                Exterior Cleaning
-              </option>
-            </select>
-          </form>
+          <SignupForm />
         </div>
       </div>
     </div>

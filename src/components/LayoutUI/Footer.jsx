@@ -60,7 +60,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="footer__copyright">
-          <span>&copy; 2022 - All Rights Are Reserved</span>
+          <p>&copy; 2022 - All Rights Are Reserved</p>
         </div>
       </div>
     </footer>

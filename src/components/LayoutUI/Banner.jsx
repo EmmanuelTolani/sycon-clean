@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="container">
-        <a href="#">10% off your first clean! Claim Now!</a>
+        <Link href={"/services"}>10% off your first clean! Claim Now!</Link>
       </div>
     </div>
   );

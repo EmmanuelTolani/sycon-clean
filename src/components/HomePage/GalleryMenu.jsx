@@ -11,7 +11,7 @@ const GalleryMenu = () => {
             Alberta!
           </p>
           <div className="book-btn">
-            <Link href="/" alt="book now">
+            <Link href="/book-now" alt="book now">
               Book Now
             </Link>
           </div>
@@ -26,6 +26,8 @@ const GalleryMenu = () => {
           <div className="gallery-menu__photo">
             <img src="../img/gall-3.png" alt="" />
           </div>
+        </div>
+        <div className="gallery-menu__photos">
           <div className="gallery-menu__photo">
             <img src="../img/gall-4.png" alt="" />
           </div>
