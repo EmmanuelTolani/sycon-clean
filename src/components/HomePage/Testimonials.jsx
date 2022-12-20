@@ -7,18 +7,18 @@ const Testimonials = () => {
         <div className="testimonials__info">
           <h1>What Our Customers Are Saying.</h1>
           <p>
-            Don’t just take our word for it, we offer the best cleaning services
-            of all kinds at a very affordable rate and our customers can
-            testify.
+            Don&apos;t just take our word for it, we offer the best cleaning
+            services of all kinds at a very affordable rate and our customers
+            can testify.
           </p>
         </div>
         <div className="testimonials__reviews">
           <div className="testimonials__review">
             <p>
-              “SYCON is simply the best out there. I came back from my travels
+              SYCON is simply the best out there. I came back from my travels
               and was so tired to clean my house as there were several rooms but
               thanks to the Synco team. I placed a quote and my house was clean
-              within a couple of hours.”
+              within a couple of hours.
             </p>
             <div className="testimonials__review-customer">
               <img src="../img/customer-img.png" alt="customer review" />
@@ -27,12 +27,12 @@ const Testimonials = () => {
           </div>
           <div className="testimonials__review">
             <p>
-              "I was skeptical at first about hiring a cleaning company, but it
-              has ended up being one of the best decisions I've made. It has
-              saved me so much time and stress, allowing me to focus on other
-              important tasks. The team is always reliable and does a thorough
-              job. I highly recommend giving a cleaning company a try - it's
-              worth every penny."
+              I was skeptical at first about hiring a cleaning company, but it
+              has ended up being one of the best decisions I&apos;ve made. It
+              has saved me so much time and stress, allowing me to focus on
+              other important tasks. The team is always reliable and does a
+              thorough job. I highly recommend giving a cleaning company a try -
+              it&apos;s worth every penny.
             </p>
             <div className="testimonials__review-customer">
               <img

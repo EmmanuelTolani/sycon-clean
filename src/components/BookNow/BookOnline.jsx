@@ -345,9 +345,9 @@ const BookOnline = () => {
         <div className="bookingform-group">
           <h2>How often?</h2>
           <p>
-            It's all about matching you with the perfect clean for your home.
-            Scheduling is flexible. Cancel or reschedule anytime. Discounts are
-            applied based on selection.
+            It&apos;s all about matching you with the perfect clean for your
+            home. Scheduling is flexible. Cancel or reschedule anytime.
+            Discounts are applied based on selection.
           </p>
           <FormElement>
             <button className="frameInput2">One Time</button>
