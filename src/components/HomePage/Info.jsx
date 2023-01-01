@@ -13,7 +13,7 @@ const Info = () => {
             and your loved ones?{" "}
           </p>
           <p>
-            Don't let fear control your life any longer. Our professional
+            Don&apos;t let fear control your life any longer. Our professional
             cleaning services can give you the peace of mind you deserve. Our
             team of experts uses the latest techniques and products to
             thoroughly sanitize and disinfect your space, leaving it sparkling

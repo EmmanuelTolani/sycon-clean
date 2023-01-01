@@ -27,8 +27,8 @@ const Info2 = () => {
           <h1>We are the best In the cleaning business.</h1>
           <p>
             Looking for the best cleaning service in town? Look no further! We
-            are the top choice for professional cleaning services, and here's
-            why:
+            are the top choice for professional cleaning services, and
+            here&apos;s why:
           </p>
           <ol>
             <li>
@@ -55,8 +55,8 @@ const Info2 = () => {
           </ol>
           <p>
             {" "}
-            Don't settle for mediocre cleaning services. Choose the best and
-            choose us. Contact us today to schedule your first cleaning!
+            Don&apos;t settle for mediocre cleaning services. Choose the best
+            and choose us. Contact us today to schedule your first cleaning!
           </p>
           <div className="book-btn">
             <Link href="/book-now" alt="book now">
