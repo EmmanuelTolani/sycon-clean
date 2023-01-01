@@ -26,8 +26,37 @@ const Info2 = () => {
         <div className="info2__right">
           <h1>We are the best In the cleaning business.</h1>
           <p>
-            Don’t just take our word for it, we offer the best cleaning services
-            of all kinds at a very affordable rate so what are you waiting for?
+            Looking for the best cleaning service in town? Look no further! We
+            are the top choice for professional cleaning services, and here's
+            why:
+          </p>
+          <ol>
+            <li>
+              Our team is highly trained and experienced, ensuring that we
+              deliver the highest quality clean every time.
+            </li>
+            <li>
+              We use only the best products and techniques to effectively clean
+              and disinfect your space.
+            </li>
+            <li>
+              We are thorough and detail-oriented, leaving no corner or surface
+              untouched.
+            </li>
+            <li>
+              We are flexible and accommodating, fitting our services to your
+              specific needs and schedule. We are reliable and dependable,
+              always showing up on time and ready to work.
+            </li>
+            <li>
+              We offer competitive pricing, so you can afford to keep your space
+              looking its best.
+            </li>
+          </ol>
+          <p>
+            {" "}
+            Don't settle for mediocre cleaning services. Choose the best and
+            choose us. Contact us today to schedule your first cleaning!
           </p>
           <div className="book-btn">
             <Link href="/book-now" alt="book now">

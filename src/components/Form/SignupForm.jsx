@@ -113,8 +113,8 @@ const SignupForm = () => {
           <label htmlFor="phoneNumber">Phone Number</label>
           <input
             className="frameInput2"
-            type="text"
-            placeholder="+1"
+            type="tel"
+            placeholder="Phone Number"
             id="phoneNumber"
             name="phoneNumber"
             onChange={formik.handleChange}

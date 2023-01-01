@@ -12,8 +12,8 @@
     justify-content: space-between;
     align-items: flex-start;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 29px;
+     font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
+    line-height: 144.02%;
     color: #173C6D;
     text-transform: capitalize;
 }

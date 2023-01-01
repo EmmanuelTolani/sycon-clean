@@ -5,10 +5,11 @@ const Hero = () => {
     <div className="hero">
       <div className="container">
         <div className="hero__info">
-          <h1>We are SYCON, a cleaning service company.</h1>
+          <h1>Get Expert Cleaning for Your Home or Business Now</h1>
           <p>
-            We take cleaning to the next level. By providing different varieties
-            of cleaning services suitable for everyone.
+            We take cleaning to another level with Eco-Friendly products. We
+            guarantee to make Your Space Sparkling and Enjoyable or your Money
+            Back.
           </p>
           <div className="book-btn">
             <Link href="/book-now" alt="book now">

@@ -1,6 +1,6 @@
-import React from "react";
+import { useState, React } from "react";
 import FormElement from "../Form/FormElement";
-import { Form, useFormik } from "formik";
+import { useFormik } from "formik";
 
 const validate = (values) => {
   const errors = {};
@@ -12,8 +12,8 @@ const validate = (values) => {
 
   if (!values.lastName) {
     errors.lastName = "Required";
-  } else if (values.lastName.length > 20) {
-    errors.lastName = "Must be 20 characters or less";
+  } else if (values.lastName.length > 15) {
+    errors.lastName = "Must be 15 characters or less";
   }
 
   if (!values.email) {
@@ -51,7 +51,6 @@ const validate = (values) => {
   } else if (values.dirtiness === "") {
     errors.dirtiness = "Select the dirtiness level";
   }
-
   if (!values.address) {
     errors.address = "Required";
   } else if (values.address === "") {
@@ -72,9 +71,26 @@ const validate = (values) => {
   } else if (!/^(?:[A-Z]\d[A-Z][ -]?\d[A-Z]\d)$/i.test(values.postalCode)) {
     errors.postalCode = "Invalid postal code";
   }
+  if (!values.date) {
+    errors.date = "Required";
+  } else if (values.date == null) {
+    errors.date = "How often do you need a clean?";
+  }
+  if (!values.frequency) {
+    errors.frequency = "Required";
+  } else if (values.frequency == null) {
+    errors.frequency = "How often do you need a clean?";
+  }
+  if (!values.termsAgreement) {
+    errors.termsAgreement = "Required";
+  } else if (values.termsAgreement == null) {
+    errors.termsAgreement = "You didn't agree to the terms";
+  }
+  return errors;
 };
 
 const BookOnline = () => {
+  const [freq, selectfreq] = useState("");
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -87,6 +103,8 @@ const BookOnline = () => {
       kitchens: 0,
       dirtiness: "",
       frequency: "",
+      date: "",
+      time: "",
       address: "",
       city: "",
       state: "",
@@ -94,14 +112,20 @@ const BookOnline = () => {
       specialInstructions: "",
       apartmentNO: "",
       discount: "",
+      termsAgreement: "",
     },
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+  function showValue(e) {
+    e.preventDefault();
+    formik.setFieldValue("frequency", e.currentTarget.value);
+    selectfreq(e.currentTarget.value);
+  }
   return (
-    <form className="bookOnline">
+    <form className="bookOnline" onSubmit={formik.handleSubmit}>
       <div className="bookOnline-container">
         <div className="bookOnline-top">
           <h2>Complete your booking</h2>
@@ -168,7 +192,7 @@ const BookOnline = () => {
               <label htmlFor="phoneNumber">Phone Number</label>
               <input
                 className="frameInput1"
-                type="text"
+                type="tel"
                 name="phoneNumber"
                 id="phoneNumber"
                 placeholder="Phone Number"
@@ -207,7 +231,7 @@ const BookOnline = () => {
             </div>
           </FormElement>
         </div>
-        {/* End select Service Type*/}
+        {/* End select Service Type */}
         {/* Start Home Specifications for cleaning */}
         <div className="bookingform-group">
           <h2>Tell us about your home</h2>
@@ -300,9 +324,10 @@ const BookOnline = () => {
         </div>
         {/* End of Home Specifications for cleaning */}
         {/* Start of Home Extras */}
+
         <div className="bookingform-group">
           <FormElement>
-            <div className="frameDiv34">
+            <button className="frameDiv34" value={"oven_clean"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -311,8 +336,8 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Inside Oven</div>
               </div>
-            </div>
-            <div className="frameDiv34">
+            </button>
+            <button className="frameDiv34" value={"hand_wash"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -321,8 +346,8 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Hand Wash</div>
               </div>
-            </div>
-            <div className="frameDiv34">
+            </button>
+            <button className="frameDiv34" value={"fridge"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -331,8 +356,8 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Inside Fidge</div>
               </div>
-            </div>
-            <div className="frameDiv34">
+            </button>
+            <button className="frameDiv34" value={"garage"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -341,10 +366,10 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Inside Garage</div>
               </div>
-            </div>
+            </button>
           </FormElement>
           <FormElement>
-            <div className="frameDiv34">
+            <button className="frameDiv34" value={"int_windows"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -353,8 +378,8 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Interior windows</div>
               </div>
-            </div>
-            <div className="frameDiv34">
+            </button>
+            <button className="frameDiv34" value={"cabinets"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -363,8 +388,8 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Inside cabinets</div>
               </div>
-            </div>
-            <div className="frameDiv34">
+            </button>
+            <button className="frameDiv34" value={"detail_base"}>
               <img
                 className="iconParkSolidmicrowaveOven"
                 alt=""
@@ -373,7 +398,7 @@ const BookOnline = () => {
               <div className="insideOven">
                 <div className="insideOven1">Detailed baseboards</div>
               </div>
-            </div>
+            </button>
           </FormElement>
         </div>
         {/* End of Home Extras */}
@@ -387,10 +412,22 @@ const BookOnline = () => {
             may arrive.
           </p>
           <FormElement>
-            <input type="date" className="frameInput2" min="2022-12-15" />
+            <input
+              name="date"
+              id="date"
+              type="date"
+              className="frameInput2"
+              min={"2022-12-15"}
+              onChange={formik.handleChange}
+              value={formik.values.date}
+              onBlur={formik.handleBlur}
+            />
             <select className="frameInput2">
               <option>Pick a time</option>
             </select>
+            {formik.touched.date && formik.errors.date ? (
+              <div>{formik.errors.date}</div>
+            ) : null}
           </FormElement>
         </div>
         <div className="bookingform-group">
@@ -401,10 +438,65 @@ const BookOnline = () => {
             Discounts are applied based on selection.
           </p>
           <FormElement>
-            <button className="frameInput2">One Time</button>
-            <button className="frameInput2">Weekly</button>
-            <button className="frameInput2">Bi-weekly</button>
-            <button className="frameInput2">Monthly</button>
+            <button
+              name="frequency"
+              id="frequency"
+              className={`${
+                freq === "one_time" ? "freqbutton active" : "freqbutton"
+              }`}
+              value={"one_time"}
+              onClick={(e) => showValue(e)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              type="button"
+            >
+              One Time
+            </button>
+            <button
+              name="frequency"
+              id="frequency"
+              className={`${
+                freq === "weekly" ? "freqbutton active" : "freqbutton"
+              }`}
+              value={"weekly"}
+              onClick={(e) => showValue(e)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              type="button"
+            >
+              Weekly
+            </button>
+            <button
+              name="frequency"
+              id="frequency"
+              className={`${
+                freq === "bi-weekly" ? "freqbutton active" : "freqbutton"
+              }`}
+              value={"bi-weekly"}
+              onClick={(e) => showValue(e)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              type="button"
+            >
+              Bi-weekly
+            </button>
+            <button
+              name="frequency"
+              id="frequency"
+              className={`${
+                freq === "monthly" ? "freqbutton active" : "freqbutton"
+              }`}
+              value={"monthly"}
+              onClick={(e) => showValue(e)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              type="button"
+            >
+              Monthly
+            </button>
+            {formik.touched.frequency && formik.errors.frequency ? (
+              <div>{formik.errors.frequency}</div>
+            ) : null}
           </FormElement>
         </div>
         {/* End of Book Service Date */}
@@ -425,6 +517,9 @@ const BookOnline = () => {
                 value={formik.values.address}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.address && formik.errors.address ? (
+                <div>{formik.errors.address}</div>
+              ) : null}
             </div>
           </FormElement>
           <FormElement>
@@ -440,19 +535,25 @@ const BookOnline = () => {
                 value={formik.values.city}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.city && formik.errors.city ? (
+                <div>{formik.errors.city}</div>
+              ) : null}
             </div>
             <div className="halfwidth">
-              <label htmlFor="state">State</label>
+              <label htmlFor="state">Province</label>
               <input
                 name="state"
                 id="state"
                 type="text"
-                placeholder="State"
+                placeholder="Province"
                 className="frameInput1"
                 onChange={formik.handleChange}
                 value={formik.values.state}
                 onBlur={formik.handleBlur}
               />
+              {formik.touched.state && formik.errors.state ? (
+                <div>{formik.errors.state}</div>
+              ) : null}
             </div>
           </FormElement>
           <FormElement>
@@ -507,9 +608,8 @@ const BookOnline = () => {
           </FormElement>
         </div>
         {/* End of Special Instructions */}
-
         <div className="bookingform-group">
-          <label htmlFor="discount">Discount Code</label>
+          {/* <label htmlFor="discount">Discount Code</label>
           <FormElement>
             <input
               name="discount"
@@ -562,13 +662,23 @@ const BookOnline = () => {
           <p>
             By clicking the Book Now button you are agreeing to our Terms of
             Service and Privacy Policy.
-          </p>
+          </p> */}
           <FormElement>
-            <input name="agree" id="agree" type="checkbox" />{" "}
-            <label htmlFor="agree">
+            <input
+              name="termsAgreement"
+              id="termsAgreement"
+              type="checkbox"
+              onChange={formik.handleChange}
+              value={formik.values.termsAgreement}
+              onBlur={formik.handleBlur}
+            />{" "}
+            <label htmlFor="termsAgreement">
               I agree to the <b>Terms of Service and Privacy Policy.</b>
             </label>
           </FormElement>
+          {formik.touched.termsAgreement && formik.errors.termsAgreement ? (
+            <div>{formik.errors.termsAgreement}</div>
+          ) : null}
         </div>
         <button className="frameDiv98" type="submit">
           Book Now

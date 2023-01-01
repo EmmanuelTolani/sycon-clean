@@ -12,6 +12,7 @@ import Faq from "../src/components/HomePage/Faq";
 import GalleryMenu from "../src/components/HomePage/GalleryMenu";
 import Testimonials from "../src/components/HomePage/Testimonials";
 import Contact from "../src/components/HomePage/Contact";
+
 export default function Home() {
   return (
     <div>
