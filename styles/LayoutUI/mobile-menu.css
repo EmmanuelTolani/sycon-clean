@@ -37,9 +37,7 @@
   justify-content: space-between;
 }
 .mobile-menu__logo img {
-  max-width: 90px;
-  max-height: 70px;
-  border-radius: 50%;
+  height: 75px;
 }
 .mobile-menu .trigger {
   line-height: 0;
@@ -98,7 +96,7 @@
 .mobile-menu .btn {
   margin-left: -10px;
 }
-@media (max-width: 1039px) {
+@media (max-width: 1040px) {
   .mobile-menu {
     display: inline-block;
   }

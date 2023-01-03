@@ -34,8 +34,7 @@
         box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 10%);
     }
     .header .header__logo img{
-        width: 133px;
-        height: 104px;
+        height: 124px;
     }
     .header .header__menu{
         display: flex;
@@ -56,7 +55,7 @@
                 color: rgb(42, 41, 41);
                 text-transform: capitalize;
                 transition: all 0.3s ease-in-out;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 21.78px;
                 font-weight: 500;
     }
@@ -81,7 +80,6 @@
         display: none;
 
     }
-
     .header-alt {
         display: none;
     }

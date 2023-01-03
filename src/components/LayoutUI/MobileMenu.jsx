@@ -21,7 +21,7 @@ const MobileMenu = ({ sticky }) => {
         <div className="mobile-menu__in">
           <div className="mobile-menu__logo">
             <Link href="/">
-              <img src="../img/sycon-logo.png" alt="sycon logo" />
+              <img src="../img/sycon-logooo.png" alt="sycon logo" />
             </Link>
           </div>
           <div className="trigger" onClick={() => setToggle(!toggle)}>
@@ -40,6 +40,11 @@ const MobileMenu = ({ sticky }) => {
       <div className="dropdown" style={{ display: toggle ? "block" : "none" }}>
         <div className="dropdown_inner">
           <ul className="anchor_nav">
+            <li className="header-btn">
+              <Link href="/book-now" alt="book now">
+                Book Now
+              </Link>
+            </li>
             <li>
               <Link href="/" alt="home">
                 Home
@@ -51,13 +56,18 @@ const MobileMenu = ({ sticky }) => {
               </Link>
             </li>
             <li>
-              <Link href="/services" alt="test">
+              <Link href="/faq" alt="faq">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" alt="services">
                 Services
               </Link>
             </li>
-            <li className="header-btn">
-              <Link href="/book-now" alt="book now">
-                Book Now
+            <li>
+              <Link href="/contact" alt="contact">
+                Contact
               </Link>
             </li>
           </ul>

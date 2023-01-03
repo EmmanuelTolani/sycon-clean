@@ -1,4 +1,4 @@
-export const faqData = [
+export const faqD = [
   {
     title: "What’s Included In A Move Out/Move In Cleaning?",
     content: `When booking our Move out/Move In clean you can expect an all inclusive service. This is our most detailed package. It

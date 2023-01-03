@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__logo">
-          <img src="../img/sycon-logo.png" alt="sycon logo" />
+          <img src="../img/sycon-logooo.png" alt="sycon logo" />
         </div>
         <ul className="footer__socials">
           <li>

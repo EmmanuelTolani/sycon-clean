@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordion from "../LayoutUI/Accordian";
-import { faqData } from "../../utils/content";
-
-const Faq = () => {
+import { faqData } from "../../utils/faq-data";
+import { faqD } from "../../utils/content";
+const Faq = (props) => {
+  // const [data, setData] = useState("");
+  // if (props.data == "full") {
+  //   setData(faqD);
+  // } else {
+  //   setData(faqData);
+  // }
   return (
     <div className="faq">
       <div className="container">
@@ -48,9 +54,13 @@ const Faq = () => {
               </li>
             </ol>
           </Accordion>
-          {faqData.map(({ title, content }, index) => (
-            <Accordion key={index} title={title} content={content} />
-          ))}
+          {props.type === "full"
+            ? faqD.map(({ title, content }, index) => (
+                <Accordion key={index} title={title} content={content} />
+              ))
+            : faqData.map(({ title, content }, index) => (
+                <Accordion key={index} title={title} content={content} />
+              ))}
         </div>
       </div>
     </div>

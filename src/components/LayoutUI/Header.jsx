@@ -19,13 +19,13 @@ const Header = ({ sticky }) => {
       <div className="container">
         <div className="header__logo">
           <Link href="/">
-            <img src="../img/sycon-logo.png" alt="sycon logo" />
+            <img src="../img/sycon-logooo.png" alt="sycon logo" />
           </Link>
         </div>
         <div className="header__menu">
           <ul className="header__anchor-nav">
             <li>
-              <Link href="/" alt="Home">
+              <Link href="/" alt="home">
                 Home
               </Link>
             </li>
@@ -35,8 +35,18 @@ const Header = ({ sticky }) => {
               </Link>
             </li>
             <li>
-              <Link href="/services" alt="test">
+              <Link href="/faq" alt="faq">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" alt="services">
                 Services
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" alt="contact us">
+                Contact
               </Link>
             </li>
             <li className="header-btn">
