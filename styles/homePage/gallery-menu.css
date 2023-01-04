@@ -22,7 +22,7 @@ text-align: center;
 color: #173C6D;
 }
 .gallery-menu .gallery-menu__info p{
-max-width: 538px;
+max-width: 900px;
 font-weight: 400;
 font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
 line-height: 144.02%;
@@ -30,7 +30,30 @@ line-height: 144.02%;
 text-align: center;
 color: rgba(0, 0, 0, 0.7);
 }
-
+.gallery-menu__list{
+    /* width: 100%;
+  height: auto;
+  /* clear: both;
+  float: left;
+  margin-top: 65px; */
+}
+/* .gallery-menu__list ul {
+    margin: 0px;
+  list-style-type: none;
+   position: relative 
+}
+.gallery-menu__list ul  li{
+     margin: 0px;
+} */
+.gallery-image{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.gallery-image img{
+   height: 600px;
+   object-fit: cover;
+}
 .gallery-menu .gallery-menu__photos{
     display: flex;
     gap: 20px;
@@ -40,7 +63,55 @@ color: rgba(0, 0, 0, 0.7);
     width: 400px;
     height: 250px;
 }
+.transform-swiper{
+  height: auto;
+  clear: both;
+  margin-top: 65px;
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.transform-swiper .prev_button, .next_button{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+  top: 50%;
+  transform: translateY(50%);
+  padding: 20px;
+  border-radius: 100%;
+  margin-top: -135px;
+  border: 1px solid rgba(18, 0, 0, 0.2);
 
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.transform-swiper .prev_button:hover, .next_button:hover{
+    border: 1px solid rgba(18, 0, 0, 0.5);
+    background: #173C6D;
+    cursor: pointer;
+}
+.transform-swiper .prev_button {
+  left: 10px;
+}
+.transform-swiper .next_button {
+  right: 10px;
+}
+.transform-swiper .prev_button .svg {
+  margin-left: -1px;
+}
+.transform-swiper .next_button .svg {
+  margin-left: 1px;
+}
+.transform-swiper .prev_button:hover .svg {
+  margin-left: -5px;
+}
+.transform-swiper .next_button:hover .svg {
+  margin-left: 5px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .gallery-menu .gallery-menu__photos:nth-child(2){

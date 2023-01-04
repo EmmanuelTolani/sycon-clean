@@ -1,22 +1,23 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 
-const MobileMenu = ({ sticky }) => {
+const MobileMenu = () => {
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
+  const stickyMobileMenu = useRef();
   useLayoutEffect(() => {
-    const handleScroll = (e) => {
-      setScrolled(window.scrollY > 50);
+    const topMenu = document.getElementById("mobile-menu");
+    let fixedTop = stickyMobileMenu.current.offsetTop;
+    const fixedMobile = () => {
+      if (window.pageYOffset > fixedTop) {
+        topMenu.classList.add("sticky");
+      } else {
+        topMenu.classList.remove("sticky");
+      }
     };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", fixedMobile);
   }, []);
   return (
-    <div className={sticky && scrolled ? "mobile-menu sticky" : "mobile-menu"}>
+    <div className="mobile-menu" id="mobile-menu" ref={stickyMobileMenu}>
       <div className="mobile-menu__container">
         <div className="mobile-menu__in">
           <div className="mobile-menu__logo">

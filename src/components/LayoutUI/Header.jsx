@@ -1,21 +1,25 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 
-const Header = ({ sticky }) => {
-  const [scrolled, setScrolled] = useState(false);
+const Header = () => {
+  const stickyHeader = useRef();
   useLayoutEffect(() => {
-    const handleScroll = (e) => {
-      setScrolled(window.scrollY > 50);
+    const topHeader = document.getElementById("header");
+    let fixedTop = stickyHeader.current.offsetTop;
+    const fixedHeader = () => {
+      if (window.pageYOffset > fixedTop) {
+        topHeader.classList.add("sticky");
+        console.log("added");
+      } else {
+        topHeader.classList.remove("sticky");
+        console.log("removed");
+      }
     };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", fixedHeader);
   }, []);
 
   return (
-    <div className={sticky && scrolled ? "header sticky" : "header"}>
+    <div className="header" id="header" ref={stickyHeader}>
       <div className="container">
         <div className="header__logo">
           <Link href="/">

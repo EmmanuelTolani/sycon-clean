@@ -28,6 +28,7 @@ line-height: 144.02%;
 text-align: center;
 color: rgba(0, 0, 0, 0.7);
 margin-bottom: 50px;
+max-width: 900px;
 }
 .testimonials .testimonials__reviews{
  display: flex;
