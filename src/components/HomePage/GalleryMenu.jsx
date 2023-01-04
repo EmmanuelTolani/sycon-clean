@@ -10,7 +10,7 @@ const GalleryMenu = () => {
           <p>
             SYCON does the heavy lifting for you. We eliminate the time and
             trouble that cleaning costs you. Have more energy and time for
-            what's important!
+            what&apos;s important!
           </p>
           <div className="book-btn">
             <Link href="/book-now" alt="book now">
