@@ -5,6 +5,7 @@ import Banner from "../src/components/LayoutUI/Banner";
 import MobileMenu from "../src/components/LayoutUI/MobileMenu";
 import Footer from "../src/components/LayoutUI/Footer";
 import SignupForm from "../src/components/Form/SignupForm";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -17,9 +18,33 @@ export default function ContactPage() {
       {/* <Banner /> */}
       <MobileMenu sticky={true} />
       <Header sticky={true} />
-      <div className="contact">
+      <div className="contact1">
         <div className="container">
           <SignupForm />
+        </div>
+        <div className="contact-bottom">
+          <div className="contact-images">
+            <img src="/img/gall-1.png"></img>
+            <img src="/img/gall-2.png"></img>
+            <img src="/img/gall-3.png"></img>
+            <img src="/img/gall-4.png"></img>
+          </div>
+          <div className="contact-details">
+            <h2>Talk To Us:</h2>
+            <p>Call Us: (780)-238-7116</p>
+            <span>
+              Email Us:{" "}
+              <Link href="mailto: info@syconcleaningservice.com">
+                info@syconcleaningservice.com
+              </Link>
+            </span>
+          </div>
+          <div className="contact-images">
+            <img src="/img/gall-5.png"></img>
+            <img src="/img/gall-6.png"></img>
+            <img src="/img/gall-1.png"></img>
+            <img src="/img/gall-2.png"></img>
+          </div>
         </div>
       </div>
       <Footer />

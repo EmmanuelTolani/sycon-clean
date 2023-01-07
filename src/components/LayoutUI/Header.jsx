@@ -9,10 +9,8 @@ const Header = () => {
     const fixedHeader = () => {
       if (window.pageYOffset > fixedTop) {
         topHeader.classList.add("sticky");
-        console.log("added");
       } else {
         topHeader.classList.remove("sticky");
-        console.log("removed");
       }
     };
     window.addEventListener("scroll", fixedHeader);

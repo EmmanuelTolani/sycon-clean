@@ -19,20 +19,6 @@ const Team = () => {
               <p>Co-founder</p>
             </div>
           </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="team member" />
-            <div className="team__person-info">
-              <h2>Alfred Augustin Bainton</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
-          <div className="team__person">
-            <img src="../img/people/team.png" alt="team member" />
-            <div className="team__person-info">
-              <h2>Adam Smith</h2>
-              <p>Co-founder</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

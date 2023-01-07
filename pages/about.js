@@ -23,7 +23,7 @@ export default function Home() {
       <Hero />
       <About />
       <Video />
-      <Team />
+      {/* <Team /> */}
       <Footer />
     </div>
   );

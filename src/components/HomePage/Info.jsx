@@ -10,7 +10,7 @@ const Info = () => {
             Are you feeling overwhelmed and anxious about the cleanliness of
             your home or business? Do you fear that germs and bacteria are
             lurking in every corner, threatening the health and safety of you
-            and your loved ones?{" "}
+            and those around you.{" "}
           </p>
           <p>
             Don&apos;t let fear control your life any longer. Our professional

@@ -13,9 +13,8 @@ In most cases after the initial deep clean, most customers switch to the standar
   },
   {
     title: "What Are Your Hours Of Operation?",
-    content: `Our hours of operation are:
-Monday – Friday: 8:30am -8pm
-Saturday – Sunday: 9am -5pm`,
+    content: `Hours of operation are: Monday – Friday: 8:30am - 8pm`,
+    addition: `Saturday – Sunday: 9am - 5pm`,
   },
   {
     title: "Is There A Rescheduling Fee?",
@@ -23,6 +22,6 @@ Saturday – Sunday: 9am -5pm`,
   },
   {
     title: "Can I Trust Your Cleaners? Are They Background Checked?",
-    content: `You sure can! Our cleaners undergo a national criminal background check, we only vet the best and get rid of the rest.`,
+    content: `You sure can! Our cleaners undergo a national criminal background check, we only vet the best and get rid of the rest, and our cleaners are also fully vaccinated.`,
   },
 ];

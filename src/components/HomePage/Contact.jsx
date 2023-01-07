@@ -1,5 +1,6 @@
 import React from "react";
 import SignupForm from "../Form/SignupForm";
+import Link from "next/link";
 const Contact = () => {
   return (
     <div className="contact">
@@ -10,24 +11,29 @@ const Contact = () => {
             <div className="contact__contact">
               <img src="../img/icons/pin.png" alt="location icon"></img>
               <h2>Office Address</h2>
-              <p>Head Office: 23 Albert ST, Toronto, Canada</p>
+              <p>10020 103 Avenue NW</p>
             </div>
             <div className="contact__contact">
               <img src="../img/icons/email.png" alt="email icon"></img>
               <h2>Mail Address</h2>
-              <p>Synco@gmail.com Helpline@synco.com</p>
+              <Link href="mailto: info@syconcleaningservice.com">
+                info@syconcleaningservice.com
+              </Link>
             </div>
           </div>
           <div className="contact__contacts">
             <div className="contact__contact">
               <img src="../img/icons/phone.png" alt="phone icon"></img>
               <h2>Phone No</h2>
-              <p>Main line: +1 232 4455677 Help line: 221234454</p>
+              <p>(780)-238-7116</p>
             </div>
             <div className="contact__contact">
               <img src="../img/icons/clock.png" alt="clock icon"></img>
               <h2>Opening Time</h2>
-              <p>10:00 am - 06:00 pm (Monday - Sunday)</p>
+              <p>
+                8:30am - 8:00pm Monday - Friday 9:00am - 5:00pm Saturday –
+                Sunday
+              </p>
             </div>
           </div>
         </div>

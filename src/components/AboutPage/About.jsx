@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div className="about">
       <div className="container">
-        <div className="about__left">
+        {/* <div className="about__left">
           <img src="../img/people/founder-img.png" alt="sycon founder"></img>
-        </div>
+        </div> */}
         <div className="about__right">
           <h1>Founder Story</h1>
           <div className="about__founder-info">

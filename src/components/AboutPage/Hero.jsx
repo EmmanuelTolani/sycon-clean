@@ -7,8 +7,9 @@ const Hero = () => {
         <div className="about-hero__left">
           <h1>Powering cleaning in Canada.</h1>
           <p>
-            Our Mission Is To Ensure Everyone Has Access To Premium cleaning
-            service and a clean environment in general.
+            We believe that a clean home is a happy home, and our mission is to
+            help our clients achieve that sense of peace and well-being through
+            reliable, efficient, and affordable cleaning services.
           </p>
         </div>
         <div className="about-hero__right">

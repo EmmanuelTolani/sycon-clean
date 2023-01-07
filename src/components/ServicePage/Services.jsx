@@ -11,7 +11,7 @@ const Services = () => {
           </div>
           <div className="services__service">
             <img src="../img/gall-6.png" alt="interior window cleaning" />
-            <p>Window Cleaning</p>
+            <p>Interior Window Cleaning</p>
           </div>
           <div className="services__service">
             <img src="../img/main/dish-wash.jpeg" alt="dish washing services" />

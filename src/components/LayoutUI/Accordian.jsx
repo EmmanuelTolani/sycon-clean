@@ -33,8 +33,9 @@ const Accordion = (props) => {
       </div>
       {isActive && (
         <div className="accordion-content">
-          {props.content}
+          <p>{props.content}</p>
           {props.children}
+          <p>{props.addition}</p>
         </div>
       )}
     </div>
