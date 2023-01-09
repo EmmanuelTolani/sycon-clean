@@ -22,7 +22,7 @@ export default function Home() {
       <Header sticky={true} />
       <Hero />
       <About />
-      <Video />
+      {/* <Video /> */}
       {/* <Team /> */}
       <Footer />
     </div>

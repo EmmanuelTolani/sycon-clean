@@ -8,23 +8,28 @@ const About = () => {
           <img src="../img/people/founder-img.png" alt="sycon founder"></img>
         </div> */}
         <div className="about__right">
-          <h1>Founder Story</h1>
+          <h1>Our Mission</h1>
           <div className="about__founder-info">
-            <h2>Prince Blessing Dunbar</h2>
-            <p>Co-founder & CEO, Synco</p>
+            {/* <h2> Community, Culture, Kindness</h2> */}
+            {/* <p>Co-founder & CEO, Synco</p> */}
           </div>
           <div className="about__founder-story">
             <p>
-              At SYCON we believe cleaning should be a luxury every family can
-              afford. As such we go above and beyond in providing the highest
-              standard of cleaning at the best possible price. “Keeping your
-              home clean can be hard to manage, so we’ve got your back. Open 7
-              days a week allows us to aid with anyone’s unique schedule”.
+              Learn More About who we are At SYCON we are dedicated to
+              connecting communities and cultures with families and individuals
+              alike through one mission. Delivering the best cleans to any home.
+              We accomplish this in the most convenient and cost-effective way
+              possible.
             </p>
+            <h2> Community, Culture, Kindness</h2>
             <p>
-              {" "}
-              At SYCON we pride ourselves in providing the highest standard of
-              cleaning at the best possible price.
+              Our three core values match our one mission. Delivering the best
+              SYCON cleaning specialist, committed to using eco-friendly
+              products and techniques to ensure the health and safety of our
+              clients and the environment, creating a service based around
+              honesty and reliability. Thank you for considering our company for
+              your cleaning needs. We look forward to serving you and making
+              your home sparkle and shine.
             </p>
           </div>
         </div>

@@ -57,7 +57,15 @@ font-size: clamp(1rem, 0.883rem + 0.313vw, 1.125rem);
 line-height: 144.02%;
 /* or 26px */
 color: rgba(0, 0, 0, 0.7);
+}
 
+.about .container .about__right .about__founder-story h2{
+    font-weight: 600;
+font-size: 24px;
+line-height: 140.02%;
+display: flex;
+align-items: center;
+color: #173C6D;
 }
 
 /* Extra small devices (phones, 600px and down) */
