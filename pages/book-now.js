@@ -15,7 +15,6 @@ export default function BookNow() {
       <Header sticky={true} />
       <MobileMenu sticky={true} />
       <BookOnline />
-      <div id="2f0de348-75ef-4583-bf91-f83911c3f4d6"></div>
       <Footer />
     </div>
   );
