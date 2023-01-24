@@ -37,7 +37,7 @@ const TransformationSwiper = () => {
         <SwiperSlide>
           <div className="gallery-image">
             <img
-              src="/img/transformations/toilet-transfo.webp"
+              src="/img/transformations/toilet-transfo.png"
               alt="toilet transformation"
             />
           </div>

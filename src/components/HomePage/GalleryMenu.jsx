@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
 import TransformationSwiper from "../LayoutUI/TransformationSwiper";
+import BookBtn from "../LayoutUI/BookBtn";
 const GalleryMenu = () => {
   return (
     <div className="gallery-menu">
@@ -12,11 +13,9 @@ const GalleryMenu = () => {
             trouble that cleaning costs you. Have more energy and time for
             what&apos;s important!
           </p>
-          <div className="book-btn">
-            <Link href="/book-now" alt="book now">
-              Book Now
-            </Link>
-          </div>
+          {/* <div>
+            <BookBtn />
+          </div> */}
         </div>
       </div>
       <TransformationSwiper />

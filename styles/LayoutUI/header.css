@@ -50,6 +50,8 @@
     }
     .header .header__anchor-nav li{
         margin-right: 48px;
+        display: flex;
+        align-items: center;
     }
     .header .header__anchor-nav li a{
                 color: rgb(42, 41, 41);
