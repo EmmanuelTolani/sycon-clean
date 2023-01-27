@@ -13,9 +13,9 @@ const GalleryMenu = () => {
             trouble that cleaning costs you. Have more energy and time for
             what&apos;s important!
           </p>
-          {/* <div>
+          <div>
             <BookBtn />
-          </div> */}
+          </div>
         </div>
       </div>
       <TransformationSwiper />

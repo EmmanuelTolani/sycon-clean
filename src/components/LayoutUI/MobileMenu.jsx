@@ -52,9 +52,6 @@ const MobileMenu = () => {
         >
           <div className="dropdown_inner">
             <ul className="anchor_nav">
-              {/* <li className="header-btn">
-                <BookBtn />
-              </li> */}
               <li>
                 <Link href="/" alt="home">
                   Home
@@ -73,6 +70,11 @@ const MobileMenu = () => {
               <li>
                 <Link href="/services" alt="services">
                   Services
+                </Link>
+              </li>
+              <li className="header-btn">
+                <Link href="/book-now" alt="book now">
+                  Book Now
                 </Link>
               </li>
               <li>

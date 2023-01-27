@@ -36,32 +36,34 @@ const Header = () => {
           <div className="header__menu">
             <ul className="header__anchor-nav">
               <li>
-                <Link href="/" alt="home">
+                <Link href="/" alt="home" replace>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" alt="about">
+                <Link href="/about" alt="about" replace>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/faq" alt="faq">
+                <Link href="/faq" alt="faq" replace>
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/services" alt="services">
+                <Link href="/services" alt="services" replace>
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" alt="contact us">
+                <Link href="/contact" alt="contact us" replace>
                   Contact
                 </Link>
               </li>
               <li className="header-btn">
-                <BookBtn />
+                <Link href="/book-now" alt="book now" replace>
+                  Book Now
+                </Link>
               </li>
             </ul>
           </div>

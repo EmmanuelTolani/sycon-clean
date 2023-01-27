@@ -33,9 +33,9 @@ const Info = () => {
               a clean and healthy environment. Contact us today and let us help
               you conquer your fears.
             </p>
-            {/* <div>
+            <div>
               <BookBtn />
-            </div> */}
+            </div>
           </div>
           <div className="info__right">
             <img src="../img/icons/canada-map.png" alt="canadian map"></img>

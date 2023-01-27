@@ -5,12 +5,6 @@ import Script from "next/script";
 const Info2 = () => {
   return (
     <>
-      {/* <Script
-        strategy="beforeInteractive"
-        src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_dialog_snippet.js"
-        form_url="https://clienthub.getjobber.com/client_hubs/2f0de348-75ef-4583-bf91-f83911c3f4d6/public/work_request/embedded_dialog_work_request_form"
-        clienthub_id="2f0de348-75ef-4583-bf91-f83911c3f4d6"
-      /> */}
       <div className="info2">
         <div className="container">
           <div className="info2__left">
@@ -67,9 +61,9 @@ const Info2 = () => {
               Don&apos;t settle for mediocre cleaning services. Choose the best
               and choose us. Contact us today to schedule your first cleaning!
             </p>
-            {/* <div className="header-btn">
+            <div className="header-btn">
               <BookBtn />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

@@ -26,18 +26,11 @@ export default function Home() {
           href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css"
         />
       </Head>
-      {/* <Script
-        strategy="beforeInteractive"
-        src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
-        clienthub_id="2f0de348-75ef-4583-bf91-f83911c3f4d6"
-        form_url="https://clienthub.getjobber.com/client_hubs/2f0de348-75ef-4583-bf91-f83911c3f4d6/public/work_request/embedded_work_request_form"
-      />
-      <Script
-        strategy="beforeInteractive"
+      <script
         src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_dialog_snippet.js"
         form_url="https://clienthub.getjobber.com/client_hubs/2f0de348-75ef-4583-bf91-f83911c3f4d6/public/work_request/embedded_dialog_work_request_form"
         clienthub_id="2f0de348-75ef-4583-bf91-f83911c3f4d6"
-      /> */}
+      />
       <Banner />
       <MobileMenu sticky={true} />
       <Header />
