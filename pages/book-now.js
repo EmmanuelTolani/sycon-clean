@@ -25,11 +25,17 @@ export default function BookNow() {
           src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
           clienthub_id="2f0de348-75ef-4583-bf91-f83911c3f4d6"
           form_url="https://clienthub.getjobber.com/client_hubs/2f0de348-75ef-4583-bf91-f83911c3f4d6/public/work_request/embedded_work_request_form"
+          async
         />
       </Head>
       <Header sticky={true} />
       <MobileMenu sticky={true} />
-      <div id="2f0de348-75ef-4583-bf91-f83911c3f4d6"></div>
+      <div className="container">
+        <div
+          id="2f0de348-75ef-4583-bf91-f83911c3f4d6"
+          style={{ height: "600px" }}
+        ></div>
+      </div>
       <Footer />
     </div>
   );
