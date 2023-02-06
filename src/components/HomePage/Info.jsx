@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BookBtn from "../LayoutUI/BookBtn";
+import BookBtn1 from "../LayoutUI/BookBtn1";
 import Script from "next/script";
 const Info = () => {
   return (
@@ -34,7 +34,7 @@ const Info = () => {
               you conquer your fears.
             </p>
             <div>
-              <BookBtn />
+              <BookBtn1 />
             </div>
           </div>
           <div className="info__right">

@@ -25,6 +25,7 @@ const BookBtn = () => {
         cursor: "pointer",
         verticalAlign: "middle",
       }}
+      className="jobber-button--green jobber-button"
     >
       Book Online
     </button>

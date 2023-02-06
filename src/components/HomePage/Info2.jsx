@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BookBtn from "../LayoutUI/BookBtn";
+import BookBtn1 from "../LayoutUI/BookBtn1";
 import Script from "next/script";
 const Info2 = () => {
   return (
@@ -62,7 +62,7 @@ const Info2 = () => {
               and choose us. Contact us today to schedule your first cleaning!
             </p>
             <div className="header-btn">
-              <BookBtn />
+              <BookBtn1 />
             </div>
           </div>
         </div>

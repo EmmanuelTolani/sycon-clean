@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 import Script from "next/script";
-import BookBtn from "./BookBtn";
+import BookBtn1 from "./BookBtn1";
 const MobileMenu = () => {
   const [toggle, setToggle] = useState(false);
   const stickyMobileMenu = useRef();

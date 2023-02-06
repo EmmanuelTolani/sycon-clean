@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
 import TransformationSwiper from "../LayoutUI/TransformationSwiper";
-import BookBtn from "../LayoutUI/BookBtn";
+import BookBtn1 from "../LayoutUI/BookBtn1";
 const GalleryMenu = () => {
   return (
     <div className="gallery-menu">
@@ -14,7 +14,7 @@ const GalleryMenu = () => {
             what&apos;s important!
           </p>
           <div>
-            <BookBtn />
+            <BookBtn1 />
           </div>
         </div>
       </div>
